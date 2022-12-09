@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NewTodo from "./components/NewToDo/NewToDo";
+import TableThanh from "./components/Table/TableThanh";
 import TodoList from "./components/TodoList/TodoList";
 import { Todo } from "./models/todo.model";
 
@@ -38,14 +39,15 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <NewTodo onAddTodo={todoAddHandler} />
+      {/* <NewTodo onAddTodo={todoAddHandler} />
       <TodoList
         items={todos}
         status={status}
         onDeleteTodo={todoDeleteHandler}
         onUpdateTodo={todoUpdateHandler}
         onChange={updateStatus}
-      />
+      /> */}
+      <TableThanh />
     </div>
   );
 };
